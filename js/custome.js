@@ -6,7 +6,7 @@ const getCategories = async () => {
     const allData = await response.json();
     allData.forEach(data => {
         worldCountry.innerHTML += `
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="country-data border border-3 rounded-3 shadow p-3 h-100"  data-bs-target="#allView"  data-bs-toggle="modal"  style="cursor: pointer;"  onclick="return countryAlldata('${data.ccn3}')">
                         <h1 class="text-center text-success text-capitalize">${data.name.common}</h1>
                     </div>
